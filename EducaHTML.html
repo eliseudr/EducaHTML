@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link href="EducaCSS.css" rel="stylesheet">
+
+    </head>
+
+    <body class="Corpo">
+
+        <title>Educa</title>
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+
+        <!-- Video de fundo -->
+        <video autoplay muted loop id="BlueSky">
+            <source src="BackgroundVideo/Sky.mp4" type="video/mp4">
+        </video>
+
+        <!--Adicionando a logo Educa-->
+        <div class="containerBalao">
+            <a href="Balao">
+                <img src="Logo/Balao2.png">
+            </a>
+        </div>
+        
+        
+            
+        <!-- Usuario e senha -->
+        <div class="container">
+            <form action="/action_page.php">
+            <label for="usrname">Username</label>
+            <input type="text" id="usrname" name="usrname" required>
+                <br/>
+            <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <br/>
+            <input type="submit" value="Sing Up">
+            </form>
+        </div>
+
+
+        <div class="footer">
+            <p> EDUCA </p>
+        </div>
+
+        
+        
+    </body>
+
+
+</html>
